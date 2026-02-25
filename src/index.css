@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --primary: #14b8a6;
+  --primary-hover: #0f9d8f;
+  --bg-gradient: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%);
+  --white: #ffffff;
+  --white-alpha: #ffffffcc;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --text-light: #999999;
+  --border-color: #e5e5e7;
+  --bg-light: #f5f5f5;
+  --bg-card: #fafafa;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --font-main: "Poppins", sans-serif;
+  --font-logo: "Roboto Slab", serif;
+}
+
+html {
+  scrollbar-width: auto;
+  cursor: default;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--bg-light);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:active {
+  background: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #d0d0d0 var(--bg-light);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-light);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
